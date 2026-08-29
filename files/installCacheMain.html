@@ -13,11 +13,10 @@ function DLProgress(e){
 function DisplayCacheProgress(){
     setTimeout(function(){
         parent.cacheUPDtxt.innerHTML = "Cache Installed Successfully";
-    }, 1000);
+    }, 2000);
     setTimeout(function(){
-        parent.CacheProgress.style.display  = "none";
-        parent.cacheUPDtxt.innerHTML = "Re-Open The Browser To Continue";
-    }, 2500);
+        location.reload();
+    }, 3000);
 }
 
 // Event handlers
